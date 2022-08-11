@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+*{
+    text-decoration: none;
+    border: none;
+    box-sizing: border-box;
+    text-transform:capitalize ;
+    color: black;
+    margin: 0%;
+    font-family: 'Nunito', sans-serif;
+}
+body{
+    background-image: url(home-bg.jpg);
+}
+header{
+    position: sticky;
+    top: 0;left: 0;right: 0;
+    background-color: white;
+    height: 80px;
+    z-index: 1000;
+    box-shadow: 10px 0.1px black;
+    /* border: 2px red solid; */
+}
+.navigation{
+    display: flex;
+    justify-content:center;
+   
+
+}
+img{
+    width: 100px;
+    height: 40px;
+    float: left;
+    margin-left: 100px;
+    margin-top: 20px;
+}
+.navigation a{
+    padding: 40px;
+    margin-left: 6px;
+}
+#home{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 150px;
+
+}
+.hm-pg{
+    flex-basis: 40%;
+    margin-left: 100px;
+}
+.pg{
+    position: absolute; 
+     top: 20%; 
+    float: left;
+    margin-top: 0px;
+    width: 420px;
+    height: 400px;
+}
+p{
+    margin-top: 20px;
+}
+input{
+    margin-top: 10px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+    border: 2px solid red;
+    color: red;
+    cursor: pointer;
+}
+.heading{
+    margin-top: 230px;
+    text-align: center;
+    font-size: 40px;
+}
+span{
+    color: red;
+}
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+.box{
+
+  margin-top: 20px;
+  background-color: white;
+  text-align: center;
+  width: 350px;
+  height: 250px;
+  -webkit-box-shadow: 0 0 10px black;
+  /* box-shadow: 0 0 10px black; */
+}
+.box img{
+    margin-left: 20px;
+  width:  80px;
+  height: 50px;
+  float: none;
+}
+.box2{
+    position: relative;
+    margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    width: 350px;
+    height: 400px;
+    -webkit-box-shadow: 0 0 10px black;
+}
+.box2 img{
+    margin-left: 0%;
+    float: none;
+    width: 90%;
+    height: 50%;
+    object-fit: cover;
+
+}
+.price{
+    position: absolute;
+    background-color: red;
+    color: white; 
+    top: 30px;
+    left: 30px;
+    border-radius: 2px;
+}
+.stars{
+    margin-top: 20px;
+}
+.stars span{
+    color: gold;
+}
+.steps{
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: space-around; */
+}
+.steps img{
+    float: none;
+    width: 200px;
+    height: 200px;
+}
+.steps h1{
+    text-align: center;
+    margin-left: 100px;
+    
+}
+.galleryBox{
+    margin-top: 20px;
+    background-color: white;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    -webkit-box-shadow: 0 0 10px black;
+} 
+.galleryBox img{
+    width: 95%;
+    height: 95%;
+    margin-left: 3%;
+    margin-top: 2%;
+
+}
+.review{
+    margin-top: 70px;
+    background-color:black;
+    text-align: center;
+    width: 350px;
+    height: 250px;
+    -webkit-box-shadow: 0 0 10px black;
+
+ 
+} 
+.review h1,.review p{
+    color: white;
+    margin-top: 0%;
+}
+.review img{
+    width: 40%;
+    height: 60%;
+    border-radius: 50%;
+    border: 10px solid white;
+    margin-top: -60px;
+    margin-left: 20px;
+    float:none;
+}
+.order{
+    position: relative;
+    left: 100px;
+    background-color: whitesmoke;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;border-radius: 10px;
+    gap: 50px;
+    text-transform: none;
+
+    /* gap: 200px; */
+
+    /* justify-content: space-between; */
+}
+.order div img{
+   float: none;
+   margin-left: 5%;
+   width: 400px;
+   height: 370px;
+   border-radius: 10px;
+}
+.order form{
+    margin-top: 30px;
+   
+}
+.order form .inputBox .input{
+    width: 300px;
+    border-radius: 7px;
+    border: 1px solid grey;
+    color: black;
+}
+.order form textarea{
+    margin-top: 10px;
+    width: 600px;
+    border: 1px solid grey;
+    height: 150px;
+
+}
+.order form input{
+    border-radius: 7px;
+}
+.lastSection{
+   
+    margin-top: 5%;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+
+}
+.socialHandle{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.socialHandle h3{
+    color: white;
+}
+.socialHandle .container{
+    margin-top: 30px;
+     width: 120px;
+    height: 50px;
+    border: 2px solid red;
+    border-radius: 4px;
+    text-align: center;
+    background-color: black;
+    color: red;
+    padding-top: 15px;
+}
+.last h3{
+    margin-top: 10px;
+    color: white;
+    margin-left: 30%;
+    padding: 30px;
+}
