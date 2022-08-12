@@ -7,35 +7,39 @@
     color: black;
     margin: 0%;
     font-family: 'Nunito', sans-serif;
+    transition:all .2s linear;
+    outline: none; border:none;
+
+
 }
+*::selection{
+    background:var(--red);
+    color:#fff;
+  }
+/* html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem; */
+  /* } */
 body{
     background-image: url(home-bg.jpg);
 }
 header{
-    position: sticky;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    position: fixed;
     top: 0;left: 0;right: 0;
     background-color: white;
     height: 80px;
     z-index: 1000;
-    box-shadow: 10px 0.1px black;
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 10%);
     /* border: 2px red solid; */
 }
-.navigation{
-    display: flex;
-    justify-content:center;
-   
 
-}
-img{
-    width: 100px;
-    height: 40px;
-    float: left;
-    margin-left: 100px;
-    margin-top: 20px;
-}
 .navigation a{
     padding: 40px;
-    margin-left: 6px;
 }
 #home{
     display: flex;
@@ -46,22 +50,25 @@ img{
 .hm-pg{
     flex-basis: 40%;
     margin-left: 100px;
+    margin-top: 100px;
 }
 .pg{
-    position: absolute; 
-     top: 20%; 
-    float: left;
+    flex-basis: 40%;
+
+}
+.pg img{
     margin-top: 0px;
-    width: 420px;
-    height: 400px;
+    width: 100%;
+    padding: 1rem;
+    animation: 3s linear infinite;
 }
 p{
     margin-top: 20px;
 }
 input{
     margin-top: 10px;
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     background-color: white;
     border: 2px solid red;
     color: red;
@@ -78,13 +85,14 @@ span{
 .boxes{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: space-around;
+    gap: 20px;
    
 }
 .box{
 
-  margin-top: 20px;
+  padding: 20px;
+  flex: 1 1 25rem;
   background-color: white;
   text-align: center;
   width: 350px;
@@ -100,6 +108,8 @@ span{
 }
 .box2{
     position: relative;
+    flex: 1 1 25rem;
+
     margin-top: 20px;
     background-color: white;
     text-align: center;
@@ -132,20 +142,22 @@ span{
 .steps{
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; */
-    /* justify-content: space-around; */
-}
-.steps img{
-    float: none;
-    width: 200px;
-    height: 200px;
-}
-.steps h1{
-    text-align: center;
-    margin-left: 100px;
+    justify-content: space-around;
+
+
     
 }
+.step{
+    padding: 40px;
+    text-align: center;
+    flex: 1 1 20rem;
+
+
+}
 .galleryBox{
+    justify-content: space-around;
+    flex: 1 1 25rem;
+
     margin-top: 20px;
     background-color: white;
     text-align: center;
@@ -161,6 +173,8 @@ span{
 
 }
 .review{
+    flex: 1 1 25rem;
+
     margin-top: 70px;
     background-color:black;
     text-align: center;
@@ -259,3 +273,8 @@ span{
     margin-left: 30%;
     padding: 30px;
 }
+
+
+
+
+   
